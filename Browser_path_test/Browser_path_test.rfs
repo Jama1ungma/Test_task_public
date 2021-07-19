@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Robot>
+  <Studio Version="1.0.2.0" />
+  <Schema>
+    <Base.Sequence type_guid="32c6fcaa-cbe4-4fab-afd9-8113b8a5190b" Name="" Description="" GUID="d2b314f1-fb93-4ea5-b323-6449948bd300" Next="" Previous="" Parent="" UI_identifier="" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+      <List>
+        <Web.OpenBrowser type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11000" Name="Открыть браузер" Description="" GUID="7650c269-e729-47b0-a009-9cf3ee9b7187" Next="986c4134-c64d-402d-9a4e-dd8c7fac8bf3" Previous="" Parent="d2b314f1-fb93-4ea5-b323-6449948bd300" UI_identifier="Web|open" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <BrowserName>Chrome</BrowserName>
+            <Profile></Profile>
+            <RunBackground>false</RunBackground>
+            <LeaveOpen>true</LeaveOpen>
+            <CollectExistingPages>false</CollectExistingPages>
+            <Extension></Extension>
+            <ContextProperty>c1e19d5b-5c6c-4310-a0d5-064c3da3b816</ContextProperty>
+          </Properties>
+        </Web.OpenBrowser>
+        <Web.Navigate type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11001" Name="# TODO: 1 https://www.moex.com" Description="" GUID="986c4134-c64d-402d-9a4e-dd8c7fac8bf3" Next="323eaebb-d5db-423c-851f-b65911926470" Previous="7650c269-e729-47b0-a009-9cf3ee9b7187" Parent="d2b314f1-fb93-4ea5-b323-6449948bd300" UI_identifier="Web|browser" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <URL>https://www.moex.com/</URL>
+            <ContextName>c1e19d5b-5c6c-4310-a0d5-064c3da3b816</ContextName>
+          </Properties>
+        </Web.Navigate>
+        <Web.Click type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11008" Name="Нажать на кнопку Меню" Description="" GUID="323eaebb-d5db-423c-851f-b65911926470" Next="f977fcd2-a2e6-411e-b0e5-1685824f6984" Previous="986c4134-c64d-402d-9a4e-dd8c7fac8bf3" Parent="d2b314f1-fb93-4ea5-b323-6449948bd300" UI_identifier="Web|click" DelayTime="5" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <XPath>/html/body/div[3]/div[2]/div/div/div/div[1]/div/div[2]/div[4]/div[2]/div[1]/a</XPath>
+            <ContextName>c1e19d5b-5c6c-4310-a0d5-064c3da3b816</ContextName>
+          </Properties>
+        </Web.Click>
+        <Web.Navigate type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11001" Name="Перейти по URL" Description="" GUID="f977fcd2-a2e6-411e-b0e5-1685824f6984" Next="d60be746-9f8e-45b3-a6e6-c2685a44dd3d" Previous="323eaebb-d5db-423c-851f-b65911926470" Parent="d2b314f1-fb93-4ea5-b323-6449948bd300" UI_identifier="Web|browser" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <URL>https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB&amp;utm_source=www.moex.com&amp;utm_term=%D0%B8%D0%BD%D0%B4%D0%B8%D0%BA%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5</URL>
+            <ContextName>c1e19d5b-5c6c-4310-a0d5-064c3da3b816</ContextName>
+          </Properties>
+        </Web.Navigate>
+        <Web.SetText type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11013" Name="Индикативные" Description="" GUID="d60be746-9f8e-45b3-a6e6-c2685a44dd3d" Next="a693b81d-ce8e-4d73-a627-d1c84435c81c" Previous="f977fcd2-a2e6-411e-b0e5-1685824f6984" Parent="d2b314f1-fb93-4ea5-b323-6449948bd300" UI_identifier="Web|text" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <EnableLog>true</EnableLog>
+            <Text>Индикативные курсы</Text>
+            <Delay>3</Delay>
+            <XPath>//input[@name="searchString"]</XPath>
+            <ContextName>c1e19d5b-5c6c-4310-a0d5-064c3da3b816</ContextName>
+          </Properties>
+        </Web.SetText>
+        <Web.Click type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11008" Name="Сразу на индикативные" Description="" GUID="a693b81d-ce8e-4d73-a627-d1c84435c81c" Next="a87ef53a-9c27-4ac2-bd0d-b68cc6f120f1" Previous="d60be746-9f8e-45b3-a6e6-c2685a44dd3d" Parent="d2b314f1-fb93-4ea5-b323-6449948bd300" UI_identifier="Web|click" DelayTime="5" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <XPath>//*[@id="materialsSearchContainer"]/div[2]/a</XPath>
+            <ContextName>c1e19d5b-5c6c-4310-a0d5-064c3da3b816</ContextName>
+          </Properties>
+        </Web.Click>
+        <Web.Click type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11008" Name="Клик" Description="" GUID="a87ef53a-9c27-4ac2-bd0d-b68cc6f120f1" Next="7c0f135d-b317-4c91-9525-c319b911a340" Previous="a693b81d-ce8e-4d73-a627-d1c84435c81c" Parent="d2b314f1-fb93-4ea5-b323-6449948bd300" UI_identifier="Web|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <XPath>id("content_disclaimer")/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]</XPath>
+            <ContextName>c1e19d5b-5c6c-4310-a0d5-064c3da3b816</ContextName>
+          </Properties>
+        </Web.Click>
+        <Web.Click type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11008" Name="Клик" Description="" GUID="7c0f135d-b317-4c91-9525-c319b911a340" Next="969f9f1c-a021-47e8-a9b1-adc293baf29d" Previous="a87ef53a-9c27-4ac2-bd0d-b68cc6f120f1" Parent="d2b314f1-fb93-4ea5-b323-6449948bd300" UI_identifier="Web|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <XPath>//*[@id="ctl00_frmLeftMenuWrap"]/div/div/div/div[2]/div/a[13]/div/span/div</XPath>
+            <ContextName>c1e19d5b-5c6c-4310-a0d5-064c3da3b816</ContextName>
+          </Properties>
+        </Web.Click>
+        <Web.Click type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11008" Name="Клик" Description="" GUID="969f9f1c-a021-47e8-a9b1-adc293baf29d" Next="8008a07a-41b9-4b55-8aa3-3c4d49cc0b68" Previous="7c0f135d-b317-4c91-9525-c319b911a340" Parent="d2b314f1-fb93-4ea5-b323-6449948bd300" UI_identifier="Web|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <XPath>id("ctl00_frmLeftMenuWrap")/div[1]/div[1]/div[1]/div[2]/div[1]/a[13]/div[1]/span[1]/div[1]</XPath>
+            <ContextName>c1e19d5b-5c6c-4310-a0d5-064c3da3b816</ContextName>
+          </Properties>
+        </Web.Click>
+        <Web.Click type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11008" Name="Срочный рынок" Description="" GUID="8008a07a-41b9-4b55-8aa3-3c4d49cc0b68" Next="e74443b2-d59f-4ac8-bc68-a37e481edb7d" Previous="969f9f1c-a021-47e8-a9b1-adc293baf29d" Parent="d2b314f1-fb93-4ea5-b323-6449948bd300" UI_identifier="Web|click" DelayTime="5" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <XPath>/html/body/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[2]/div[1]/a[1]</XPath>
+            <ContextName>c1e19d5b-5c6c-4310-a0d5-064c3da3b816</ContextName>
+          </Properties>
+        </Web.Click>
+        <Web.Click type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11008" Name="Срочный рынок" Description="" GUID="e74443b2-d59f-4ac8-bc68-a37e481edb7d" Next="d45b47fd-d1be-447e-9833-f4a1512faf51" Previous="8008a07a-41b9-4b55-8aa3-3c4d49cc0b68" Parent="d2b314f1-fb93-4ea5-b323-6449948bd300" UI_identifier="Web|click" DelayTime="5" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <XPath>/html/body/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[2]/div[1]/div[1]/div[3]/a[1]</XPath>
+            <ContextName>c1e19d5b-5c6c-4310-a0d5-064c3da3b816</ContextName>
+          </Properties>
+        </Web.Click>
+        <Web.Click type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11008" Name="Согласие с условиями" Description="" GUID="d45b47fd-d1be-447e-9833-f4a1512faf51" Next="03c42292-8f90-4d1e-90d1-215c725f1173" Previous="e74443b2-d59f-4ac8-bc68-a37e481edb7d" Parent="d2b314f1-fb93-4ea5-b323-6449948bd300" UI_identifier="Web|click" DelayTime="5" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <XPath>id("content_disclaimer")/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]</XPath>
+            <ContextName>c1e19d5b-5c6c-4310-a0d5-064c3da3b816</ContextName>
+          </Properties>
+        </Web.Click>
+        <Web.FindComboBoxElement type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11021" Name="Найти элемент в комбобоксе" Description="" GUID="03c42292-8f90-4d1e-90d1-215c725f1173" Next="5a973de4-d0b6-4656-b28c-e4d1f52efd8a" Previous="d45b47fd-d1be-447e-9833-f4a1512faf51" Parent="d2b314f1-fb93-4ea5-b323-6449948bd300" UI_identifier="Web|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <NameElement>1</NameElement>
+            <XPath>id("d1day")</XPath>
+            <ContextName>c1e19d5b-5c6c-4310-a0d5-064c3da3b816</ContextName>
+          </Properties>
+        </Web.FindComboBoxElement>
+        <Web.FindComboBoxElement type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11021" Name="Найти элемент в комбобоксе" Description="" GUID="5a973de4-d0b6-4656-b28c-e4d1f52efd8a" Next="340161be-4a85-4b11-8df1-91e76b53e20a" Previous="03c42292-8f90-4d1e-90d1-215c725f1173" Parent="d2b314f1-fb93-4ea5-b323-6449948bd300" UI_identifier="Web|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <NameElement>EUR_RUB</NameElement>
+            <XPath>//*[@id="ctl00_PageContent_CurrencySelect"]/option[4]</XPath>
+            <ContextName>c1e19d5b-5c6c-4310-a0d5-064c3da3b816</ContextName>
+          </Properties>
+        </Web.FindComboBoxElement>
+        <Web.Click type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11008" Name="Индикативные курсы" Description="" GUID="340161be-4a85-4b11-8df1-91e76b53e20a" Next="af14d48d-505f-4357-83f9-04eeca760f5f" Previous="5a973de4-d0b6-4656-b28c-e4d1f52efd8a" Parent="d2b314f1-fb93-4ea5-b323-6449948bd300" UI_identifier="Web|click" DelayTime="5" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <XPath>//*[@id="ctl00_frmLeftMenuWrap"]/div/div/div/div[1]/div/a</XPath>
+            <ContextName>c1e19d5b-5c6c-4310-a0d5-064c3da3b816</ContextName>
+          </Properties>
+        </Web.Click>
+        <Web.Click type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11008" Name="Индикативные курсы" Description="" GUID="af14d48d-505f-4357-83f9-04eeca760f5f" Next="" Previous="340161be-4a85-4b11-8df1-91e76b53e20a" Parent="d2b314f1-fb93-4ea5-b323-6449948bd300" UI_identifier="Web|click" DelayTime="5" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <XPath>//*[@id="ctl00_frmLeftMenuWrap"]/div/div/div/div[2]/div/a[13]/div/span/div</XPath>
+            <ContextName>c1e19d5b-5c6c-4310-a0d5-064c3da3b816</ContextName>
+          </Properties>
+        </Web.Click>
+      </List>
+    </Base.Sequence>
+  </Schema>
+  <Variables>
+    <List>
+      <Variable.DateTime type_guid="f883d2c6-45d4-4a15-911b-826eadc17d06" Name="today" GUID="7bc0093e-a43a-483f-9022-fc4d51241e4e" IsReturn="false">
+        <Value>01.01.0001 0:00:00</Value>
+      </Variable.DateTime>
+      <Variable.String type_guid="405908d9-302a-4db7-a09a-59f23b9269c1" Name="date_from" GUID="3d0d5cb9-b75c-4a41-a69b-eb85edf389ce" IsReturn="false">
+        <Value></Value>
+      </Variable.String>
+      <Variable.Table type_guid="4bbc78a3-e61c-4161-b499-044211c5e4ec" Name="table_1" GUID="ad1eec9b-0a6f-4418-bd01-3a63d677596d" IsReturn="false">
+        <Value>[]</Value>
+      </Variable.Table>
+      <VariableArray type_guid="f883d2c6-45d4-4a15-911b-826eadc17d06" IsArray="true" Name="dates" GUID="d7abc621-d5c2-42de-9701-54f9744be173" IsReturn="false">
+        <Value></Value>
+      </VariableArray>
+    </List>
+  </Variables>
+  <Contexts>
+    <List>
+      <ContextLT ContextType="WebInstance">
+        <List>
+          <Context ContextName="WebInstance0" GUID="c1e19d5b-5c6c-4310-a0d5-064c3da3b816" ActionGuid="7650c269-e729-47b0-a009-9cf3ee9b7187" />
+        </List>
+      </ContextLT>
+    </List>
+  </Contexts>
+</Robot>
